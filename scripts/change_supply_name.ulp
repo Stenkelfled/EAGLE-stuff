@@ -1,0 +1,39 @@
+//change name of supply symbol
+
+#require 6.0500
+
+#usage 	"<b>Change Name of a supply symbol</b>"
+		"<p>"
+		"Usage: open device, then type: <code> run change_supply_name <new_name> </code>"
+		"</p>"
+
+if(argc < 2){
+	dlgMessageBox(":Too few Arguments. Missing new name of symbol!");
+	exit(-1);
+}
+
+string old_name = "", new_name=argv[1];
+
+string cmd="";
+
+if(!deviceset){
+	dlgMessageBox(":No device opened. Please open the device to change!");
+	exit(-1);
+}
+
+deviceset(Deviceset){
+	if(!old_name){
+		old_name = Deviceset.name;
+	}
+}
+
+cmd += "RENAME " + old_name + ".dev " + new_name + ".dev;";
+cmd += "RENAME " + old_name + ".sym " + new_name + ".sym;";
+cmd += "EDIT " + new_name + ".sym;";
+cmd += "NAME " + old_name + " " + new_name + ";";
+
+switch(dlgMessageBox(cmd, "+OK", "-Abort")){
+	case 0: break;
+	case 1: exit(0); break;
+}
+exit(cmd);
