@@ -1,0 +1,6 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+#~~~~0805~~~~
+
+#~~~~Elektrolyt~~~~
+CPOL-EUE5-13;E5-13;33u/450V;FARNELL>2346349

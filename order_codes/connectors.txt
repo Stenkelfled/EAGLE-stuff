@@ -1,0 +1,3 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+SMA-GEWINKELT;SMA-GEWINKELT;;FARNELL>2112448:2473828
