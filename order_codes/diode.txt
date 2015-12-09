@@ -1,0 +1,3 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+1N5386BG;DIODE_AXIAL;;FARNELL>9558390;
