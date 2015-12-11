@@ -1,0 +1,34 @@
+#require 6.0500 //Version 6.5.0
+
+#usage 	"<b>remove all H from the inductor values</b>"
+
+
+if(!schematic){
+	dlgMessageBox(":No schematic opened.");
+	exit(-1);
+}
+
+string cmd = "VALUE ";
+
+int brk=0, brk_limit=-1;
+
+schematic(Schem){
+	Schem.parts(Part){
+		if( (brk < brk_limit) || (brk_limit < 0) ){
+			if(Part.device.prefix == "L"){
+				string value = Part.value;
+				int fpos = strrchr(strlwr(value),'h');
+				if( fpos == (strlen(value)-1) ){
+					value = strsub(value,0,fpos);
+					cmd += Part.name + " " + value + " ";
+					++brk;
+				}
+			}
+		}
+	}
+}
+
+if(!dlgMessageBox(cmd, "+OK","-Abort")){
+	exit(cmd);
+}
+
