@@ -1,0 +1,7 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+#~~~~Multiplexer~~~~
+ADG713;ADG713;;FARNELL>9603905
+
+#~~~~OPV~~~~
+LMH6624;SOT23-5-LMH6624;;FARNELL>1468897

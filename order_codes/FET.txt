@@ -1,0 +1,7 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+#~~~~FET-driver~~~~
+ADP3633;SOIC8_MOSFETTREIBER;;FARNELL>1827312
+
+#~~~~N-channel~~~~
+INF_SPD04N;TO_251;;FARNELL>1471811
