@@ -1,7 +1,7 @@
 #Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
 
 #~~~~ADC~~~~
-MCP4725_;MCP4725_;;FARNELL>1578449
+MCP4725_(DAC,I2C);MCP4725_(DAC,I2C);;FARNELL>1578449
 
 #~~~~Logic~~~~
 74AHC1G32DBV;SOT23-5;;FARNELL>1105926
@@ -18,6 +18,7 @@ LMH6624;SOT23-5-LMH6624;;FARNELL>1468897
 
 #~~~~Transceiver~~~~
 ST485;SO-08M;;FARNELL>1842627
+FT232RL;SSOP28;;FARNELL>1146032
 
 #~~~~VGA~~~~
 AD8331_QSOP20;AD8331;;FARNELL>1581949
