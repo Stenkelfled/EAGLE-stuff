@@ -1,13 +1,23 @@
 #Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
 
+#~~~~ADC~~~~
+MCP4725_;MCP4725_;;FARNELL>1578449
+
+#~~~~Logic~~~~
+74AHC1G32DBV;SOT23-5;;FARNELL>1105926
+
 #~~~~Multiplexer~~~~
 ADG713;ADG713;;FARNELL>9603905
 
 #~~~~OPV~~~~
 LMH6624;SOT23-5-LMH6624;;FARNELL>1468897
 
-#~~~~VGA~~~~
-AD8331_QSOP20;AD8331;;FARNELL>1581949
-
 #~~~~Shiftregister~~~~
 74HC_SHREG;SO16_SHREG;;FARNELL>1607849
+74HC595D;SO16;;FARNELL>1607849
+
+#~~~~Transceiver~~~~
+ST485;SO-08M;;FARNELL>1842627
+
+#~~~~VGA~~~~
+AD8331_QSOP20;AD8331;;FARNELL>1581949

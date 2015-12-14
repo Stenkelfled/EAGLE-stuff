@@ -1,0 +1,7 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+#~~~~Optocoupler~~~~
+ILD205;SOIC08;;FARNELL>1469512
+
+#~~~~RGB-LED~~~~
+TOPLED-3T;P-LCC-4;;FARNELL>2322115

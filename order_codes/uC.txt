@@ -1,0 +1,5 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+#~~~~AtMega~~~~
+#MEGA644-20AU;TQFP44;;FARNELL>1455121
+#MEGA8535-A;TQFP44;;FARNELL>1455121
