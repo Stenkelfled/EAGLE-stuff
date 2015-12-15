@@ -1,0 +1,3 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+CRYTALHC49S;HC49/S;16M0;FARNELL>1538746

@@ -1,0 +1,7 @@
+#Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
+
+#~~~~Line regulators~~~~
+78XXS;78XXS;L78M24CV+24VFIX;FARNELL>9756205
+
+#~~~~Rectifier~~~~
+RB1A;RB1A;;FARNELL>1497584
