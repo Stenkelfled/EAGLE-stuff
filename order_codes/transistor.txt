@@ -1,4 +1,4 @@
 #Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
 
-351;351;;FARNELL>9913700
-MT2_RELAY;THT_RELAIS;;FARNELL>9913700
+#~~~~npn~~~~
+BC489;TO92-EBC;;FARNELL>2453792
