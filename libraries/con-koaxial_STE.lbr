@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -96,6 +96,25 @@
 <wire x1="12" y1="-3.8" x2="-3.8" y2="-3.8" width="0.1" layer="39"/>
 <wire x1="-3.8" y1="-3.8" x2="-3.8" y2="3.8" width="0.1" layer="39"/>
 </package>
+<package name="TNC-GEWINKELT">
+<pad name="SIGNAL" x="0" y="0" drill="1.3" rot="R180"/>
+<wire x1="-9.4" y1="-7.5" x2="-9.4" y2="7.5" width="0.1" layer="22"/>
+<wire x1="-9.4" y1="7.5" x2="7.6" y2="7.5" width="0.1" layer="22"/>
+<wire x1="7.6" y1="7.5" x2="7.6" y2="-7.5" width="0.1" layer="22"/>
+<wire x1="7.6" y1="-7.5" x2="-9.4" y2="-7.5" width="0.1" layer="22"/>
+<wire x1="-9.4" y1="6.4" x2="-18.5" y2="6.4" width="0.1" layer="21"/>
+<wire x1="-30.5" y1="6" x2="-30.5" y2="-6" width="0.1" layer="21"/>
+<pad name="SHIELD$2" x="3.3" y="3.3" drill="1.3"/>
+<pad name="SHIELD$1" x="-3.3" y="3.3" drill="1.3"/>
+<pad name="SHIELD$3" x="3.3" y="-3.3" drill="1.3"/>
+<pad name="SHIELD$4" x="-3.3" y="-3.3" drill="1.3"/>
+<wire x1="-18.5" y1="-6.4" x2="-9.4" y2="-6.4" width="0.1" layer="21"/>
+<wire x1="-30.5" y1="6" x2="-18.5" y2="6" width="0.1" layer="21"/>
+<wire x1="-18.5" y1="6" x2="-18.5" y2="-6" width="0.1" layer="21"/>
+<wire x1="-18.5" y1="-6" x2="-30.5" y2="-6" width="0.1" layer="21"/>
+<wire x1="-18.5" y1="6" x2="-18.5" y2="6.4" width="0.1" layer="21"/>
+<wire x1="-18.5" y1="-6" x2="-18.5" y2="-6.4" width="0.1" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BU-BNC">
@@ -121,6 +140,22 @@
 <device name="GEWINKELT" package="SMA-GEWINKELT">
 <connects>
 <connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3 SHIELD4"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TNC-">
+<gates>
+<gate name="G$1" symbol="BU-BNC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="GWINKELT" package="TNC-GEWINKELT">
+<connects>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD$1 SHIELD$2 SHIELD$3 SHIELD$4"/>
 <connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
 </connects>
 <technologies>
