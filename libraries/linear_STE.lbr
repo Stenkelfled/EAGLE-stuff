@@ -118,6 +118,7 @@
 </symbols>
 <devicesets>
 <deviceset name="L78" uservalue="yes">
+<description>Linearregler, out:24V</description>
 <gates>
 <gate name="G$1" symbol="LINEREG_FIXED" x="0" y="0"/>
 </gates>
@@ -135,6 +136,7 @@
 </devices>
 </deviceset>
 <deviceset name="L4940" uservalue="yes">
+<description>Linearregler, out: 5V</description>
 <gates>
 <gate name="G$1" symbol="LINEREG_FIXED" x="0" y="0"/>
 </gates>
@@ -152,6 +154,7 @@
 </devices>
 </deviceset>
 <deviceset name="LM317" uservalue="yes">
+<description>Linearregler, out:adjustable</description>
 <gates>
 <gate name="G$1" symbol="LINEREG_ADJ" x="0" y="0"/>
 </gates>
@@ -169,6 +172,7 @@
 </devices>
 </deviceset>
 <deviceset name="LM2990" uservalue="yes">
+<description>Linearregler, out:-5v</description>
 <gates>
 <gate name="G$1" symbol="LINEREG_FIXED" x="0" y="0"/>
 </gates>

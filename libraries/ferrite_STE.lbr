@@ -86,6 +86,7 @@
 </symbols>
 <devicesets>
 <deviceset name="FERRITE-EU_0805" prefix="FERRITE" uservalue="yes">
+<description>Ferritperle</description>
 <gates>
 <gate name="G$1" symbol="FERRITEBEAD" x="0" y="0"/>
 </gates>
