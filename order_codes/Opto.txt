@@ -1,7 +1,12 @@
 #Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
 
+#~~~~LED~~~~
+LEDCHIP-LED0805;CHIP-LED0805;GREEN;REICHELT>SMD-LED 0805 GN
+
 #~~~~Optocoupler~~~~
 ILD205;SOIC08;;FARNELL>1469512
+ACPL-247;SO16;;FARNELL>1634758
 
 #~~~~RGB-LED~~~~
 TOPLED-3T;P-LCC-4;;FARNELL>2322115
+
