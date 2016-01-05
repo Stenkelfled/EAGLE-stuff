@@ -100,10 +100,10 @@
 <package name="TNC-GEWINKELT">
 <description>Gewinkelter TNC-Stecker für Reverse Pole (male)</description>
 <pad name="SIGNAL" x="0" y="0" drill="1.3" rot="R180"/>
-<wire x1="-9.4" y1="-7.5" x2="-9.4" y2="7.5" width="0.1" layer="22"/>
-<wire x1="-9.4" y1="7.5" x2="7.6" y2="7.5" width="0.1" layer="22"/>
-<wire x1="7.6" y1="7.5" x2="7.6" y2="-7.5" width="0.1" layer="22"/>
-<wire x1="7.6" y1="-7.5" x2="-9.4" y2="-7.5" width="0.1" layer="22"/>
+<wire x1="-9.4" y1="-7.5" x2="-9.4" y2="7.5" width="0.1" layer="21"/>
+<wire x1="-9.4" y1="7.5" x2="7.6" y2="7.5" width="0.1" layer="21"/>
+<wire x1="7.6" y1="7.5" x2="7.6" y2="-7.5" width="0.1" layer="21"/>
+<wire x1="7.6" y1="-7.5" x2="-9.4" y2="-7.5" width="0.1" layer="21"/>
 <wire x1="-9.4" y1="6.4" x2="-18.5" y2="6.4" width="0.1" layer="21"/>
 <wire x1="-30.5" y1="6" x2="-30.5" y2="-6" width="0.1" layer="21"/>
 <pad name="SHIELD$2" x="3.3" y="3.3" drill="1.3"/>
