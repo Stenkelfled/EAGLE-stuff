@@ -1,0 +1,1 @@
+This Repo is mainly inteded as a private collection of EAGLE-related stuff, including ordercodes, libraries and scripts. You may browse around and use, what you want - but do not expect any support.
