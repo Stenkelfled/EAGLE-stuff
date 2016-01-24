@@ -1,0 +1,2 @@
+# Format: Bestellnummer;LIEFERANT;Alternativbestellnummer(optional)
+foo;FARNELL;
