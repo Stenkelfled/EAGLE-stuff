@@ -1,0 +1,13 @@
+Schaltplan:
+
+F5 delete
+F6 copy
+F7 move
+F8 group
+F9 net
+F10 value
+F11 name
+
+shift+F9 label
+
+ 
