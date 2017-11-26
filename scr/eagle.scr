@@ -7,8 +7,9 @@
 #
 
 BRD:
-#MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
-#     '[pcb-service.png] PCB Service : Run pcb-service.ulp;';
+MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;'\
+     '[bin/pcb-service.png] PCB Service : Run pcb-service.ulp;'\
+     '[bin/autodesk-make.png] Manufacture...: Run manufacturing.ulp;'\
 Grid MM 0.2 ON alt MM 0.05;
 CHANGE WIDTH 0.2;
 CHANGE DRILL 0.4;
@@ -17,14 +18,18 @@ CHANGE ISOLATE 0.3;
 change diameter auto;
 set wire_bend 1;
 
+DISPLAY = 'Preset_Top' None 1 17 18 19 20 21 23 25 39 41 45 51;
+DISPLAY = 'Preset_Bottom' None 16 17 18 19 20 22 24 26 40 42 45 52;
+DISPLAY = 'Preset_Standard' None 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 39 40 41 42 44 45 51 52;
+
 SCH:
 Change Width 0.006in;
 Grid off;
-MENU '[designlink22.png] Search and order {\
+MENU '[bin/designlink.png] Search and order {\
                                           General : Run designlink-order.ulp -general; |\
                                           Schematic : Run designlink-order.ulp; \
                                           }'\
-     '[LTspice.png] LT Spice simulation {\
+     '[bin/LTspice.png] LT Spice simulation {\
                     Export: RUN ltspice.ulp /E; |\
                     Export Setup: RUN ltspice.ulp /E /S; |\
                     Export Group: RUN ltspice.ulp /E /G; |\
@@ -33,35 +38,35 @@ MENU '[designlink22.png] Search and order {\
 ;
 
 LBR:
-MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
-     '[LTspice.png] LT Spice simulation {\
+MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;'\
+     '[bin/LTspice.png] LT Spice simulation {\
                   Export: RUN ltspice.ulp /E; |\
                   Import: RUN ltspice.ulp /I; \
      }'\
-     '[pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
 ;
 
 DEV:
 Grid Default;
-MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;' \
-     '[LTspice.png] LT Spice simulation {\
+MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;' \
+     '[bin/LTspice.png] LT Spice simulation {\
                   Export: RUN ltspice.ulp /E; |\
                   SpiceOrder : RUN spiceorder.ulp; |\
                   SpiceModel: ATTRIBUTE SPICEMODEL |\
                   Value2: ATTRIBUTE VALUE2 |\
                   Import: RUN ltspice.ulp /I; \
      }'\
-     '[pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;'\
+     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;'\
 ;
 
 SYM:
-Change Width 0.010;
+Change Width 0.010in;
 Change Size 0.07;
 Grid Default On;
 Change Function None;
 Change Visible Off;
 Change Length Short;
-MENU '[LTspice.png] LT Spice simulation {\
+MENU '[bin/LTspice.png] LT Spice simulation {\
                   Export: RUN ltspice.ulp /E; |\
                   SpiceOrder : RUN spiceorder.ulp; |\
                   Import: RUN ltspice.ulp /I; \
@@ -72,8 +77,8 @@ PAC:
 Change Width 0.005;
 Change Size 0.050;
 Grid MM 0.2 ON alt MM 0.05;
-MENU '[LTspice.png] LT Spice simulation {\
+MENU '[bin/LTspice.png] LT Spice simulation {\
                   Import: RUN ltspice.ulp /I; \
      }'\
-     '[pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
      ;

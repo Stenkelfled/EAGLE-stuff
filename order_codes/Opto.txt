@@ -1,7 +1,11 @@
 #Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
 
+#~~~~Fototransistor~~~~
+lpt80;lpt80;;REICHELT>LPT 80
+
 #~~~~LED~~~~
 LEDCHIP-LED0805;CHIP-LED0805;GREEN;REICHELT>SMD-LED 0805 GN
+duoled-rg-c;duoled-c-5mm;;REICHELT>LED 5 RG-3
 
 #~~~~Optocoupler~~~~
 ILD205;SOIC08;;FARNELL>1469512

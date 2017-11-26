@@ -1,5 +1,7 @@
 Schaltplan:
 
+F2 erc
+alt+F2 add
 F5 delete
 F6 copy
 F7 move
@@ -8,6 +10,17 @@ F9 net
 F10 value
 F11 name
 
+shift+F6 paste
 shift+F9 label
+
+
+Bibliothek:Symbol
+F5 delete
+F6 copy
+F7 move
+F8 group
+F9 wire
+F10 pin
+F11 name
 
  
