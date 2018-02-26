@@ -1,0 +1,10 @@
+
+ASSIGN F2   'run bom_TURAG --ocpath D:\Lukas\Dokumente\Github\EAGLE-bom-script -- blpath D:\Lukas\Dokumente\Github\EAGLE-bom-script'
+ASSIGN F5   'delete'
+
+ASSIGN F9   'net'
+ASSIGN F10  'value'
+ASSIGN F11  'name'
+
+Change Width 0.006in;
+Grid off;

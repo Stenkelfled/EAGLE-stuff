@@ -1,0 +1,59 @@
+#####Tastenkombinationen
+
+ASSIGN F3 'Window 0.5';
+ASSIGN F4 'Window 2';
+
+#F5 delete / ripup
+
+ASSIGN F6   'copy';
+ASSIGN F7   'move';
+ASSIGN F8   'group';
+
+#F9 net / route
+ASSIGN S+F9 'wire';
+
+#Layer:
+#   F10: top + bottom
+#   F11: nur top
+#   F12: nur bottom
+#   +strg inkl. restrict und keepout
+#   +shift inkl. names + values
+#   +alt inkl. stop
+
+
+ASSIGN F10      'display none 1 16 17 18 19 20 21 22 23 24 45 48 51 52';
+ASSIGN C+F10    'display none 1 16 17 18 19 20 21 22 23 24 45 48 51 52  39 40 41 42';
+#this is occupied by Windows! ASSIGN S+F10    'display none 1 16 17 18 19 20 21 22 23 24 45 48 51 52  25 26 27 28';
+ASSIGN A+F10    'display none 1 16 17 18 19 20 21 22 23 24 45 48 51 52  29 30';
+ASSIGN CS+F10   'display none 1 16 17 18 19 20 21 22 23 24 45 48 51 52  39 40 41 42  25 26 27 28';
+ASSIGN CA+F10   'display none 1 16 17 18 19 20 21 22 23 24 45 48 51 52  39 40 41 42  29 30';
+ASSIGN CSA+F10  'display none 1 16 17 18 19 20 21 22 23 24 45 48 51 52  39 40 41 42  25 26 27 28  29 30';
+
+ASSIGN F11      'display none 1 17 18 19 20 21 23 45 48 51';
+ASSIGN C+F11    'display none 1 17 18 19 20 21 23 45 48 51  39 41';
+ASSIGN SF11     'display none 1 17 18 19 20 21 23 45 48 51  25 27';
+ASSIGN A+F11    'display none 1 17 18 19 20 21 23 45 48 51  29';
+ASSIGN CS+F11   'display none 1 17 18 19 20 21 23 45 48 51  39 41  25 27';
+ASSIGN CA+F11   'display none 1 17 18 19 20 21 23 45 48 51  39 41  29';
+ASSIGN CSA+F11  'display none 1 17 18 19 20 21 23 45 48 51  39 41  25 27  29';
+
+ASSIGN F12      'display none 16 17 18 19 20 22 24 45 48 52';
+ASSIGN C+F12    'display none 16 17 18 19 20 22 24 45 48 52  40 42';
+ASSIGN S+F12    'display none 16 17 18 19 20 22 24 45 48 52  26 28';
+ASSIGN A+F12    'display none 16 17 18 19 20 22 24 45 48 52  30';
+ASSIGN CS+F12   'display none 16 17 18 19 20 22 24 45 48 52  40 42  26 28';
+ASSIGN CA+F12   'display none 16 17 18 19 20 22 24 45 48 52  40 42  30';
+ASSIGN CSA+F12  'display none 16 17 18 19 20 22 24 45 48 52  40 42  26 28  30';
+
+
+#####Menus
+
+SET WIDTH_MENU 0.2 0.3 0.4 0.6 0.8 1.0;
+SET DRILL_MENU 0.2 0.3 0.4 0.6 0.8 1.0;
+
+
+#####Einstellungen
+
+SET OPTIMIZING ON;
+CHANGE THERMALS ON;
+SET Interface.PreferredUnit 2;

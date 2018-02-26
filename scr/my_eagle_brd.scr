@@ -1,0 +1,14 @@
+
+ASSIGN F2   'ratsnest'
+ASSIGN A+F2 'ripup @ *'
+ASSIGN F5   'ripup'
+
+ASSIGN F9   'route'
+
+CHANGE WIDTH 0.2;
+CHANGE DRILL 0.4;
+CHANGE SHAPE round;
+CHANGE ISOLATE 0.3;
+change diameter auto;
+set wire_bend 1;
+
