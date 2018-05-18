@@ -1,5 +1,6 @@
 #####Tastenkombinationen
 
+ASSIGN F1 'info'
 ASSIGN F3 'Window 0.5';
 ASSIGN F4 'Window 2';
 
@@ -55,5 +56,4 @@ SET DRILL_MENU 0.2 0.3 0.4 0.6 0.8 1.0;
 #####Einstellungen
 
 SET OPTIMIZING ON;
-CHANGE THERMALS ON;
 SET Interface.PreferredUnit 2;

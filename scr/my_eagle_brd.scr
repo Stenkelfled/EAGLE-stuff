@@ -11,4 +11,5 @@ CHANGE SHAPE round;
 CHANGE ISOLATE 0.3;
 change diameter auto;
 set wire_bend 1;
+CHANGE THERMALS ON;
 
