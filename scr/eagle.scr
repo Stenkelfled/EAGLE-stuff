@@ -9,8 +9,8 @@
 SCRIPT my_eagle_general
 
 BRD:
-MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;'\
-     '[bin/pcb-service.png] PCB Service : Run pcb-service.ulp;'\
+MENU '[bin/designlink.svg] Search and order : Run designlink-order.ulp -general;'\
+     '[bin/pcb-service.svg] PCB Service : Run pcb-service.ulp;'\
 ;
 DISPLAY = 'Preset_Top' None 1 17 18 19 20 21 23 25 39 41 45 51;
 DISPLAY = 'Preset_Bottom' None 16 17 18 19 20 22 24 26 40 42 45 52;
@@ -21,11 +21,11 @@ SCRIPT my_eagle_brd
 SCH:
 Grid Default;
 Change Width 0.006in;
-MENU '[bin/designlink.png] Search and order {\
+MENU '[bin/designlink.svg] Search and order {\
                                           General : Run designlink-order.ulp -general; |\
                                           Schematic : Run designlink-order.ulp; \
                                           }'\
-     '[bin/LTspice.png] LT Spice simulation {\
+     '[bin/LTspice.svg] LT Spice simulation {\
                     Export: RUN ltspice.ulp /E; |\
                     Export Setup: RUN ltspice.ulp /E /S; |\
                     Export Group: RUN ltspice.ulp /E /G; |\
@@ -36,27 +36,27 @@ MENU '[bin/designlink.png] Search and order {\
 SCRIPT my_eagle_sch
 
 LBR:
-MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;'\
-     '[bin/LTspice.png] LT Spice simulation {\
+MENU '[bin/designlink.svg] Search and order : Run designlink-order.ulp -general;'\
+     '[bin/LTspice.svg] LT Spice simulation {\
                   Export: RUN ltspice.ulp /E; |\
                   Import: RUN ltspice.ulp /I; \
      }'\
-     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+     '[bin/pads-pcb.svg] PADS package import : RUN import-pads-powerpcb-v5;' \
 ;
 
 SCRIPT my_eagle_lbr
 
 DEV:
 Grid Default;
-MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;' \
-     '[bin/LTspice.png] LT Spice simulation {\
+MENU '[bin/designlink.svg] Search and order : Run designlink-order.ulp -general;' \
+     '[bin/LTspice.svg] LT Spice simulation {\
                   Export: RUN ltspice.ulp /E; |\
                   SpiceOrder : RUN spiceorder.ulp; |\
                   SpiceModel: ATTRIBUTE SPICEMODEL |\
                   Value2: ATTRIBUTE VALUE2 |\
                   Import: RUN ltspice.ulp /I; \
      }'\
-     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;'\
+     '[bin/pads-pcb.svg] PADS package import : RUN import-pads-powerpcb-v5;'\
 ;
 
 SCRIPT my_eagle_dev
@@ -64,7 +64,7 @@ SCRIPT my_eagle_dev
 SYM:
 Grid Default On;
 Change Width 0.010in;
-MENU '[bin/LTspice.png] LT Spice simulation {\
+MENU '[bin/LTspice.svg] LT Spice simulation {\
                   Export: RUN ltspice.ulp /E; |\
                   SpiceOrder : RUN spiceorder.ulp; |\
                   Import: RUN ltspice.ulp /I; \
@@ -77,10 +77,10 @@ PAC:
 Grid Default On;
 Change Width 0.005in;
 Change Size 0.050in;
-MENU '[bin/LTspice.png] LT Spice simulation {\
+MENU '[bin/LTspice.svg] LT Spice simulation {\
                   Import: RUN ltspice.ulp /I; \
      }'\
-     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+     '[bin/pads-pcb.svg] PADS package import : RUN import-pads-powerpcb-v5;' \
      ;
 
 SCRIPT my_eagle_pac
