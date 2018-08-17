@@ -1,5 +1,5 @@
 
-ASSIGN F2   'run bom_TURAG --ocpath D:\Lukas\Dokumente\Github\EAGLE-bom-script -- blpath D:\Lukas\Dokumente\Github\EAGLE-bom-script'
+ASSIGN F2   'run bom_TURAG --ocpath D:\Lukas\Dokumente\Github\EAGLE-stuff\order_codes -- blpath D:\Lukas\Dokumente\Github\EAGLE-stuff'
 ASSIGN F5   'delete'
 
 ASSIGN F9   'net'
