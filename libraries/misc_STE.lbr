@@ -168,26 +168,26 @@
 <wire x1="-1.143" y1="-0.762" x2="-1.27" y2="-0.508" width="0.254" layer="94"/>
 </symbol>
 <symbol name="ESP8266">
-<pin name="3V3" x="10.16" y="53.34" length="short" rot="R270"/>
-<pin name="EN" x="-2.54" y="43.18" length="short"/>
-<pin name="IO14" x="22.86" y="30.48" length="short" rot="R180"/>
-<pin name="IO12" x="22.86" y="35.56" length="short" rot="R180"/>
-<pin name="IO13" x="22.86" y="33.02" length="short" rot="R180"/>
-<pin name="IO15" x="22.86" y="27.94" length="short" rot="R180"/>
-<pin name="IO2" x="22.86" y="43.18" length="short" rot="R180"/>
-<pin name="IO0" x="22.86" y="45.72" length="short" rot="R180"/>
-<pin name="GND" x="10.16" y="20.32" length="short" rot="R90"/>
-<pin name="IO16" x="22.86" y="25.4" length="short" rot="R180"/>
-<pin name="TOUT" x="-2.54" y="35.56" length="short"/>
-<pin name="!RST" x="-2.54" y="40.64" length="short"/>
-<pin name="IO5" x="22.86" y="40.64" length="short" rot="R180"/>
-<pin name="TXD" x="-2.54" y="30.48" length="short"/>
-<pin name="RXD" x="-2.54" y="27.94" length="short"/>
-<pin name="IO4" x="22.86" y="38.1" length="short" rot="R180"/>
-<wire x1="20.32" y1="50.8" x2="0" y2="50.8" width="0.254" layer="94"/>
-<wire x1="0" y1="50.8" x2="0" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
-<wire x1="20.32" y1="22.86" x2="20.32" y2="50.8" width="0.254" layer="94"/>
+<pin name="3V3" x="0" y="17.78" length="short" direction="pwr" rot="R270"/>
+<pin name="EN" x="-12.7" y="7.62" length="short"/>
+<pin name="IO14" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="IO12" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="IO13" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="IO15" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="IO2" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="IO0" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="GND" x="0" y="-15.24" length="short" direction="pwr" rot="R90"/>
+<pin name="IO16" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="TOUT" x="-12.7" y="0" length="short"/>
+<pin name="!RST" x="-12.7" y="5.08" length="short"/>
+<pin name="IO5" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="TXD" x="-12.7" y="-5.08" length="short"/>
+<pin name="RXD" x="-12.7" y="-7.62" length="short"/>
+<pin name="IO4" x="12.7" y="2.54" length="short" rot="R180"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="15.24" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -213,7 +213,7 @@
 &lt;br&gt;
 Doku: https://www.pollin.de/productdownloads/D810696B.PDF</description>
 <gates>
-<gate name="G$1" symbol="ESP8266" x="-10.16" y="-35.56"/>
+<gate name="G$1" symbol="ESP8266" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-POLLIN" package="ESP8266-POLLIN">
