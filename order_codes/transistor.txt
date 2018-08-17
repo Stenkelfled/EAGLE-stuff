@@ -1,4 +1,5 @@
 #Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
 
 #~~~~npn~~~~
+BC547B;TO92;;REICHELT>BC 547B
 BC489;TO92-EBC;;FARNELL>2453792

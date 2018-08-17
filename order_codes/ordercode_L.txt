@@ -1,5 +1,8 @@
 #Format:  device;package;value(optional);distributor>order-code;distributor>order-code; ...
 
+#~~~~Ferrite~~~~
+FERRITE-EU_0805;L0805;;REICHELT>BLM21PG 331
+
 #~~~~Line Filter~~~~
 ADTL1-4-75;CD542;ADT1-1+;MINICIRCUITS>ADT1-1+
 ADTL1-4-75WM_LINE-FILTER;WM-LF;500u;FARNELL>1636274
